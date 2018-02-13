@@ -15,6 +15,10 @@ Optimization Functions:
 
 Functions contain documentation and examples, just type the funtion name followed by a "?" as in standart Python. 
 
+Installation:
+In a terminal run:
+pip install simpleDOE
+
 For more, visit the package page.
 
 To get involved in the project, please reach out!

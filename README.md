@@ -5,14 +5,14 @@ Test of proportions are widely used in marketing such as A/B testing and Test/Co
 **simpleDOE** contains these functions:
 
 ### Point Estimate Statistic Functions:
-  - **prop_test_power(n1, n2, p1, p2, alpha=0.05):**  Returns the power of a test of two proportions. A power equal or higher to 0.8 is usually considered acceptable for a test.
+  - **1. prop_test_power(n1, n2, p1, p2, alpha=0.05):**  Returns the power of a test of two proportions. A power equal or higher to 0.8 is usually considered acceptable for a test.
   
     PARAMETERS:
     - n1 and n2: sizes of groups 1 and 2 used in the test.
     - p1 and p2: proportions being tested related to each group.
     - alpha: desired confidence level. 0.05 is the standard value widely used.
     
-  - **prop_test_pvalue(n1, n2, p1, p2 ,alpha=0.05, tail=1):** Returns the p-value of a Z test of 2 proportions.
+  - **2. prop_test_pvalue(n1, n2, p1, p2 ,alpha=0.05, tail=1):** Returns the p-value of a Z test of 2 proportions.
   
     PARAMETERS:
     - n1 and n2: sizes of groups 1 and 2 used in the test.
@@ -20,7 +20,7 @@ Test of proportions are widely used in marketing such as A/B testing and Test/Co
     - alpha: desired confidence level. 0.05 is the standard value widely used.
     - tail: 1 (default) of 2.
     
-  - **prop_test_conf_interval(p, n, alpha=0.05):** Returns the confidence interval for a test of proportions.
+  - **3. prop_test_conf_interval(p, n, alpha=0.05):** Returns the confidence interval for a test of proportions.
   
     PARAMETERS:
     - p: Proportion that is the result of the test.
@@ -28,7 +28,7 @@ Test of proportions are widely used in marketing such as A/B testing and Test/Co
     - alpha: Confidence level (0.05 default).
 
 ### Optimization Functions:
-  - **optimal_experiment_test_prop(n, p1, p2, alpha=0.05, power=0.8):** Calculates the optimal sizes for a test given certain parameters.
+  - **4. optimal_experiment_test_prop(n, p1, p2, alpha=0.05, power=0.8):** Calculates the optimal sizes for a test given certain parameters.
   
     PARAMETERS:
     - n: Total available population for a test.
@@ -37,7 +37,7 @@ Test of proportions are widely used in marketing such as A/B testing and Test/Co
     - alpha: Confidence level of the test (0.05 default).
     - power: Desired power for the test (0.8 default).
     
-  - **optimal_experiment_size(n1_ratio, p1, p2, alpha=0.05, power=0.8):** calculates the optimal size for a 2 group test given a desired ratio.
+  - **5. optimal_experiment_size(n1_ratio, p1, p2, alpha=0.05, power=0.8):** calculates the optimal size for a 2 group test given a desired ratio.
   
     PARAMETERS:
     - n1_ratio: % ratio desired for test group 1. Must be between 0 and 1.
@@ -46,7 +46,7 @@ Test of proportions are widely used in marketing such as A/B testing and Test/Co
     - alpha: Confidence level of the test (0.05 default).
     - power: Desired power for the test (0.8 default).
     
-  - **optimal_control_size(test_n, p1, p2, alpha=0.05, power=0.8):** Calculates the minimal size expected for a control population given a test population and expected proportions.
+  - **6. optimal_control_size(test_n, p1, p2, alpha=0.05, power=0.8):** Calculates the minimal size expected for a control population given a test population and expected proportions.
   
     PARAMETERS:
     - test_n: Test group population.

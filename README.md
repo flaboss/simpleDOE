@@ -14,7 +14,20 @@ Test of proportions are widely used in marketing such as A/B testing and Test/Co
   - **optimal_experiment_size(n1_ratio, p1, p2, alpha=0.05, power=0.8):** calculates the optimal size for a 2 group test given a desired ratio.
   - **optimal_control_size(test_n, p1, p2, alpha=0.05, power=0.8):** Calculates the minimal size expected for a control population given a test population and expected proportions.
 
-Functions contain documentation and examples, just type the funtion name followed by a "?" or `help(fuction)` as in standart Python. 
+Functions contain documentation and examples, just type the funtion name followed by a "?" or `help(function)` as in standart Python. 
+
+### Examples:
+**1. Calculating the Statistical Power of a Test of 2 proportions:**
+    
+    A marketing manager wants to execute an experiment testing two different 
+    emails offering a product. He divides his population in two groups: test1 
+    and test2 containing 20000 and 10000 email receivers respectively.
+    He expects a response rate of 2% for his test1 and 1.4% for his test2. 
+    Is this test significant and does it have significant statistical power?
+    
+   `prop_test_power(20000, 10000, 0.02, 0.014)`
+    - The result is 0.95772126714949513 which is considered an acceptable level 
+    of power in this case. The manager can proceed with the experiment.
 
 ### Installation:
 

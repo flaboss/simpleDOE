@@ -18,7 +18,7 @@ Test of proportions are widely used in marketing such as A/B testing and Test/Co
     - n1 and n2: sizes of groups 1 and 2 used in the test.
     - p1 and p2: proportions being tested related to each group.
     - alpha: desired confidence level. 0.05 is the standard value widely used.
-    - tail: 1 (default) of 2.
+    - tail: 1 (default) or 2.
     
   - **3. prop_test_conf_interval(p, n, alpha=0.05):** Returns the confidence interval for a test of proportions.
   

@@ -60,6 +60,9 @@ All functions contain documentation and examples, just type the funtion name fol
 
 ### Examples:
 
+**Even though the examples below relate to marketing, simpleDOE can also be used in other fields.**
+
+
 **1. Calculating the Statistical Power of a Test of 2 proportions:**
     
     A marketing manager wants to execute an experiment testing two different 
